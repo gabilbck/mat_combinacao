@@ -32,11 +32,6 @@ body{
     font-weight: bold;
     width: 100%;
 }
-.conteudo{
-    display: flex;
-    background-color: #8b5742;
-    color: white;
-}
 .item{
     background-color: white;
     margin: 0.5rem;
@@ -70,6 +65,8 @@ button{
     margin: 0.5rem;
     transition: 0.5s;
     color: #8b5742;
+    margin-top: 1rem;
+    border: #4d3329 solid 0.3rem;
 }
 button:hover{
     font-weight: bolder;
@@ -84,5 +81,74 @@ button a{
     color: #8b5742;
 }
 img{
-    margin: 0.5rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    border-radius: 0.5rem;
 }
+
+
+/* colunas 4 */
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px; /* Define o espaçamento entre as colunas */
+  }
+  
+  .column {
+    background-color: #f2f2f2;
+    padding: 15px;
+    border-radius: 0.5rem;
+    border: #4d3329 solid 0.3rem;
+  }
+
+    .column input{
+        color: #8b5742;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+    .column p{
+        color: #8b5742;
+        margin-bottom: 0.5rem;
+        text-align: center;
+    }
+    .column input:hover{
+        margin: 0.2rem;
+    }
+    .column input:active{
+        background-color: #8b5742;
+        color: white;
+    }
+
+  .column a{
+    text-decoration: none;
+    color: #8b5742;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    margin-left: 0.5rem;
+  }
+  
+  /* Altera o layout para uma coluna no celular */
+  @media (max-width: 768px) {
+    .container {
+      grid-template-columns: 1fr; /* Define apenas uma coluna */
+    }
+  }
+
+/* Textos */
+.texto-intro{
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #8b5742;
+    margin: 30%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-style: italic;
+}
+
+@media (max-width: 768px) {
+    .texto-intro{
+        margin: 2rem;
+        text-align: justify;
+    }
+}
+  

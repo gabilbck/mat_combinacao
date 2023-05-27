@@ -4,6 +4,7 @@
 $mapa1 = filter_input(INPUT_GET, 'mapa1');
 $mapa2 = filter_input(INPUT_GET, 'mapa2');
 $mapa3 = filter_input(INPUT_GET, 'mapa3');
+$mapa4 = filter_input(INPUT_GET, 'mapa4');
 
 if ($mapa3 == 'op'){ // Variáveis que têm o value="cer"
     $msgVenceu = 'Parabéns, Cavaleiro!<br><br>
@@ -16,7 +17,7 @@ if ($mapa3 == 'op'){ // Variáveis que têm o value="cer"
     $msgPerdeu1 = '<br>Nossas condolências à família e amigos... 
     <br><br><br><br>Ass. Reino de Inforny. ';
     //Mapas
-    $mapaErr = $mapa1 || $mapa2; // Escolhas erradas do tipo específico
+    $mapaErr = $mapa1 || $mapa2 || $mapa4; // Escolhas erradas do tipo específico
     if($mapaErr){ 
         $mapaErr = '♞ O cavaleiro escolheu um(s) mapa(s) ruim(s).<br>';
     } else{
@@ -25,11 +26,12 @@ if ($mapa3 == 'op'){ // Variáveis que têm o value="cer"
 }
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../src/css/style.css" rel="stylesheet">
     <title>Resultado 1</title>
 </head>
 <body>

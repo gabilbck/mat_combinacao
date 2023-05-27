@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../src/css/style1.css">
+    <link rel="stylesheet" href="../src/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap" rel="stylesheet">
@@ -19,35 +19,42 @@
     <br>
     <form id="combinacoes" action="resultado1.php" method="get">
         <div class="">
-            <div>
-                <p>Primeira missão: escolher o mapa certo</p>
-            </div>
+            <center>
+                <h3>Primeira missão: escolher o mapa certo</h3>
+                <br>
+            </center>
             <!-- ITENS -->
-            <div class="conteudo"> 
-                <div class="item">
-                    <p>Mapa 1</p> 
-                    <input type="checkbox" name="mapa1" value="op">
-                    <img src="../src/img/deserto.png" width="150" alt="Mapa 1">
+            <div class="container">
+                <div class="column">
+                    <input type="checkbox" name="mapa1" value="op"><a>Deserto do Leste</a> 
+                    <p>Um local extremamente seco,<br>antigo lar de criaturas gigantes</p>
+                    <center><img src="../src/img/deserto1.png" width="150" alt="Mapa 1" ></center>
                 </div>
-                <div class="item">
-                    <p>Mapa 2</p>
-                    <input type="checkbox" name="mapa2" value="op">
-                    <img src="../src/img/colinas.png" width="150" alt="Mapa 2">
+                <div class="column">
+                    <input type="checkbox" name="mapa2" value="op"><a>Colinas do Oeste</a><br>
+                    <p>Um ambiente de rochas com<br>uma atmosfera assustadora.</p>
+                    <center><img src="../src/img/colinas.png" width="150" alt="Mapa 2" ></center>
                 </div>
-                <div class="item">
-                    <p>Mapa 3</p>
-                    <input type="checkbox" name="mapa3" value="op">
-                    <img src="../src/img/floresta.png" width="150" alt="Mapa 3">
+                <div class="column">
+                    <input type="checkbox" name="mapa3" value="op"><a>Floresta do Norte</a><br>
+                    <p>Uma floresta fria e quieta,<br>aparentemente normal</p>
+                    <center><img src="../src/img/floresta2.png" width="150" alt="Mapa 3" ></center>
+                </div>
+                <div class="column">
+                    <input type="checkbox" name="mapa4" value="op"><a>Batalha do Sul</a><br>
+                    <p>Um Cemitério com a carcaça de<br>diversas criaturas envelhecidas.</p>
+                    <center><img src="../src/img/bicho.png" width="150" alt="Mapa 4" ></center>
                 </div>
             </div>
-            <button style="color: #8b5742;" type="button" onclick="verificar()">Começar a viagem!</button>
+            <br>
+            <center><button style="color: #8b5742;" type="button" onclick="verificar()">Começar a viagem!</button></center>
         </div>
     </form>
     <br>
     <hr class="barra-branca">
     <div class="footer">
         <h4>Informações do projeto</h4>
-        <a href="#">Repositório</a>
+        <a target="blank" href="https://github.com/gadulb/joguinho">Repositório</a>
     </div>
 
 <script>
