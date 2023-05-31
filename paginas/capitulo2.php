@@ -24,7 +24,7 @@
                 <br>
             </center>
             <!-- ITENS -->
-            <div class="container">
+            <div class="container col-4">
                 <div class="column">
                     <input type="checkbox" name="aliado1" value="op"><a>Cachorro Caramelo</a> 
                     <p>Ótimo dançarino e companheiro<br>muito fiel.</p>
@@ -51,7 +51,7 @@
                 <h3>Segunda missão: escolher o presente do aliado certo</h3>
                 <br>
             </center>
-            <div class="container">
+            <div class="container col-4">
                 <div class="column">
                     <input type="checkbox" name="anel1" value="op"><a>Anel Comum</a> 
                     <p>Apenas um anel confortável</p>

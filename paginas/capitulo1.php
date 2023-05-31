@@ -24,7 +24,7 @@
                 <br>
             </center>
             <!-- ITENS -->
-            <div class="container">
+            <div class="container col-4">
                 <div class="column">
                     <input type="checkbox" name="mapa1" value="op"><a>Deserto do Leste</a> 
                     <p>Um local extremamente seco,<br>antigo lar de criaturas gigantes</p>

@@ -9,6 +9,12 @@ $anel2 = filter_input(INPUT_GET, 'anel2');
 $anel3 = filter_input(INPUT_GET, 'anel3');
 $anel4 = filter_input(INPUT_GET, 'anel4');
 
+$anelErr = ($anel1 || $anel2 || $anel3 == "op");
+$aliadoErr = ($aliado1 || $aliado2 || $aliado3 == "op");
+
+$burriceAnel = ($anel1 && $anel2) || ($anel1 && $anel3) || ($anel1 && $anel4) || ($anel2 && $anel3) || ($anel2 && $anel4) || ($anel3 && $anel4);
+$burriceAliado = ($aliado1 && $aliado2) || ($aliado1 && $aliado3) || ($aliado1 && $aliado4) || ($aliado2 && $aliado3) || ($aliado2 && $aliado4) || ($aliado3 && $aliado4);
+
 if (($aliado4 == 'op') && ($anel4 == 'op')){ // Variáveis que têm o value="cer"
     $msgVenceu = 'Parabéns, Cavaleiro!<br><br>
     <br>O reino de Inforny fora tomado pelos dragões e você, como um dos importantes cavaleiros do reino, enfrentou-os de forma sábia com êxito, mesmo não encontrando tempo suficiente para se preparar, por isso, além de parabenizá-lo pela sua sabedoria de escolhas, o reino o parabeniza pelo bom desempenho durante a guerra.   
@@ -19,40 +25,45 @@ if (($aliado4 == 'op') && ($anel4 == 'op')){ // Variáveis que têm o value="cer
     <br><br>Alguns dos itens encontrados que, possivelmente, o atrapalharam durante a guerra:<br><br>';
     $msgPerdeu1 = '<br>Nossas condolências à família e amigos... 
     <br><br><br><br>Ass. Reino de Inforny. ';
-    //Erros
-    $burriceAnel = ($anel1 && $anel2) || ($anel1 && $anel3) || ($anel1 && $anel4) || ($anel2 && $anel3) || ($anel2 && $anel4) || ($anel3 && $anel4);
-    $burriceAliado = ($aliado1 && $aliado2) || ($aliado1 && $aliado3) || ($aliado1 && $aliado4) || ($aliado2 && $aliado3) || ($aliado2 && $aliado4) || ($aliado3 && $aliado4);
-    if($burriceAnel){
-        $burriceAnel = 'Por que você escolheu dois anéis?<br>';
+    if (($aliado1 || $aliado2 || $aliado3 == "op") && ($anel1 || $anel2 || $anel3 == "op")){
+        $aliadoErr = ($aliado1 || $aliado2 || $aliado3 == "op"); // Escolhas erradas do tipo específico
+        if($aliadoErr){ 
+            $aliadoErr = '♞ O cavaleiro escolheu um(s) aliado(s) ruim(s).<br>';
+        } else{
+            $aliadoErr = '';
+        }
+        if($anelErr){ 
+            $anelErr = '♞ O cavaleiro escolheu um(s) anel(s) ruim(s).<br>';
+        } else{
+            $anelErr = '';
+        }
     } else{
-        $burriceAnel = "";
+        if($burriceAnel){
+            $burriceAnel = 'Por que você escolheu dois anéis?<br>';
+        } else{
+            $burriceAnel = "";
+        }
+        if($burriceAliado){
+            $burriceAliado = 'Por que você escolheu dois aliados?<br>';
+        } else{
+            $burriceAliado = '';
+        }
+        if($burriceAnel){
+            $aliadoErr = '♞ O cavaleiro não escolheu um aliado.<br>';
+        } else{
+            $aliadoErr = '';
+        }
+        if($burriceAliado){
+            $anelErr = '♞ O cavaleiro não escolheu um anel.<br>';
+        } else{
+            $anelErr = '';
+        }
     }
-    if($burriceAliado){
-        $burriceAliado = 'Por que você escolheu dois aliados?<br>';
-    } else{
-        $burriceAliado = '';
-    }
-    $aliadoErr = $aliado1 || $aliado2 || $aliado3; // Escolhas erradas do tipo específico
-    if($aliadoErr){ 
+    if (($anel4 == 'op') && ($aliado1 || $aliado2 || $aliado3 == 'op')){
         $aliadoErr = '♞ O cavaleiro escolheu um(s) aliado(s) ruim(s).<br>';
-    } else{
-        $aliadoErr = '';
     }
-    $anelErr = $anel1 || $anel2 || $anel3; // Escolhas erradas do tipo específico
-    if($anelErr){ 
-        $anelErr = '♞ O cavaleiro escolheu um(s) aliado(s) ruim(s).<br>';
-    } else{
-        $anelErr = '';
-    }
-    if($burriceAnel){
-        $aliadoErr = '♞ O cavaleiro não escolheu um aliado.<br>';
-    } else{
-        $aliadoErr = '';
-    }
-    if($burriceAliado){
-        $anelErr = '♞ O cavaleiro não escolheu um anel.<br>';
-    } else{
-        $anelErr = '';
+    if (($aliado4 == "op") && ($anel1 || $anel2 || $anel3 == "op")){
+        $anelErr = '♞ O cavaleiro escolheu um(s) anel(is) ruim(s).<br>';
     }
 }
 ?>
