@@ -203,7 +203,7 @@ img {
 }
 @media (max-width: 768px) {
     .texto-intro {
-        margin: 2rem;
+        margin: 0;
         text-align: justify;
     }
 }
