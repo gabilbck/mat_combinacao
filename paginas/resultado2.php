@@ -89,7 +89,7 @@ if (($aliado4 == 'op') && ($anel4 == 'op')){ // Variáveis que têm o value="cer
     <?php // Se o usuário venceu
     if (isset($msgVenceu)){
         echo $msgVenceu;
-        echo '<br><center><button><a href="capitulo3.php">Ir para o próximo capítulo</a></button></center>';
+        echo '<br><center><button><a href="capitulo3.php">PRÓXIMO CAPÍTULO</a></button></center>';
     } else{ // Se o usuário perdeu
         echo $msgPerdeu;
         echo $aliadoErr;
@@ -97,7 +97,7 @@ if (($aliado4 == 'op') && ($anel4 == 'op')){ // Variáveis que têm o value="cer
         echo $burriceAliado;
         echo $burriceAnel;
         echo $msgPerdeu1;
-        echo '<br><center><button><a href="home.php">Voltar ao início</a></button></center>';
+        echo '<br><center><button><a href="home.php">VOLTAR AO INÍCIO</a></button></center>';
     }
     ?>
 </div>

@@ -97,7 +97,7 @@ if (($armadura4 == 'op') && ($espada5 == "op") && ($escudo4 == "op") && ($pocao5
         echo $pocaoErr; 
         echo $comidaErr;
         echo $msgPerdeu1;
-        echo '<button><a href="capitulo1.php">Voltar ao início</a></button>';
+        echo '<button><a href="capitulo1.php">VOLTAR AO INÍCIO</a></button>';
     }
     ?>
 </body>
