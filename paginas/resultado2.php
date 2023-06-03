@@ -74,13 +74,22 @@ if (($aliado4 == 'op') && ($anel4 == 'op')){ // Variáveis que têm o value="cer
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../src/css/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap" rel="stylesheet">
     <title>Resultado 2</title>
 </head>
 <body>
+<div class="resultado">
+    <div class="header">
+        <h1 style="font-family: 'Patrick Hand SC', cursive;">Horizontes Sombrios: O Caminho do Exilado</h1>
+    </div>
+    <hr class="barra-branca">
+    <br>
     <?php // Se o usuário venceu
     if (isset($msgVenceu)){
         echo $msgVenceu;
-        echo '<button><a href="capitulo3.php">Ir para o próximo capítulo</a></button>';
+        echo '<br><center><button><a href="capitulo3.php">Ir para o próximo capítulo</a></button></center>';
     } else{ // Se o usuário perdeu
         echo $msgPerdeu;
         echo $aliadoErr;
@@ -88,8 +97,9 @@ if (($aliado4 == 'op') && ($anel4 == 'op')){ // Variáveis que têm o value="cer
         echo $burriceAliado;
         echo $burriceAnel;
         echo $msgPerdeu1;
-        echo '<button><a href="home.php">Voltar ao início</a></button>';
+        echo '<br><center><button><a href="home.php">Voltar ao início</a></button></center>';
     }
     ?>
+</div>
 </body>
 </html>

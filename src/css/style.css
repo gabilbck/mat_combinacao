@@ -15,10 +15,13 @@ body {
     align-items: center;
     background-color: #8b5742;
     color: white;
-    margin: 5%
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 1%;
+    margin-bottom: 1%;
 }
-
 .header {
+    font-family: 'Patrick Hand SC', cursive;
     color: #fff;
     padding: 10px;
     text-align: center;
@@ -77,9 +80,10 @@ h3 {
 /* Detalhes */
 .barra-branca {
     width: 100%;
-    height: 0.1rem;
+    height: 0.25rem;
     background-color: white;
     border: 0 solid white;
+    border-radius: 1rem;
 }
 
 button {
@@ -87,19 +91,19 @@ button {
     border: 0;
     border-radius: 0.5rem;
     padding: 0.5rem;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: bold;
     cursor: pointer;
     margin: 0.5rem;
     transition: 0.5s;
     color: #8b5742;
     margin-top: 1rem;
-    border: #4d3329 solid 0.3rem;
+    /* border: #4d3329 solid 0.3rem; */
 }
 
 button:hover {
     font-weight: bolder;
-    font-size: 1.1rem;
+    font-size: 1.5rem;
 }
 
 button:active {
@@ -110,6 +114,7 @@ button:active {
 button a {
     text-decoration: none;
     color: #8b5742;
+    font-weight: bolder;
 }
 
 img {
@@ -144,7 +149,7 @@ img {
     background-color: #f2f2f2;
     padding: 15px;
     border-radius: 0.5rem;
-    border: #4d3329 solid 0.3rem;
+    /* border: #4d3329 solid 0.3rem; */
 }
 .column input {
     color: #8b5742;
@@ -206,4 +211,10 @@ img {
         margin: 0;
         text-align: justify;
     }
+}
+
+/* Resultado */
+.resultado{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
 }
