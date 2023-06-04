@@ -47,7 +47,7 @@
                 </div>
             </div>
             <br>
-            <center><button style="color: #8b5742;" type="button" onclick="verificar()">Começar a viagem!</button></center>
+            <center><button style="color: #8b5742;" type="button" onclick="verificar()">COMEÇAR A VIAGEM!</button></center>
         </div>
     </form>
     <br>

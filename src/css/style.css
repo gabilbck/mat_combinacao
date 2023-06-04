@@ -215,6 +215,29 @@ img {
 }
 
 /* Resultado */
+.resposta{
+    background-color: white;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    color: #8b5742;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+@media (max-width: 768px) {
+    .resposta {
+        margin: 5%;
+    }
+}
 .resultado{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.texto-resultado{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
 }

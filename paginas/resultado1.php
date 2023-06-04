@@ -11,17 +11,19 @@ $mapa3 = filter_input(INPUT_GET, 'mapa3');
 $mapa4 = filter_input(INPUT_GET, 'mapa4');
 
 if ($mapa3 == 'op'){ // Variáveis que têm o value="cer"
-    $msgVenceu = '<div style="font-size: 30px;">
-    <a style="font-size: 35px; font-weight: bolder;">Parabéns, Cavaleiro!</a><br>
+    $msgVenceu = '
+    <a class="texto-resultado">
+    Parabéns, Cavaleiro!<br>
     <br>O reino de Inforny fora tomado pelos dragões e você, como um dos importantes cavaleiros do reino, enfrentou-os de forma sábia com êxito, mesmo não encontrando tempo suficiente para se preparar, por isso, além de parabenizá-lo pela sua sabedoria de escolhas, o reino o parabeniza pelo bom desempenho durante a guerra.   
-    <br><br>Ass. Reino de Inforny.</div>';
+    <br><br>Ass. Reino de Inforny.</a>';
 } else{
-    $msgPerdeu = '<div style="font-size: 30px;">
-    Lamentamos ao Cavaleiro...<br><br> 
+    $msgPerdeu = '
+    <a class="texto-resultado">
+    Lamentamos ao Cavaleiro...<br>
     <br>O reino de Inforny lamenta, através desta carta, à morte do cavaleiro. Por conta de suas más escolhas, não conseguiu resistir à guerra.
-    <br><br>Alguns dos itens encontrados que, possivelmente, o atrapalharam durante a guerra:<br><br>';
+    Alguns dos itens encontrados que, possivelmente, o atrapalharam durante a guerra:<br><br>';
     $msgPerdeu1 = '<br>Nossas condolências à família e amigos... 
-    <br><br><br><br>Ass. Reino de Inforny.</div> ';
+    <br><br>Ass. Reino de Inforny.</a>';
     //Mapas
     $mapaErr = $mapa1 || $mapa2 || $mapa4; // Escolhas erradas do tipo específico
     if($mapaErr){ 
@@ -37,7 +39,7 @@ if ($mapa3 == 'op'){ // Variáveis que têm o value="cer"
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="../src/css/style.css" rel="stylesheet">
+    <link href="../src/css/style.css" type="text/css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap" rel="stylesheet">
@@ -52,13 +54,21 @@ if ($mapa3 == 'op'){ // Variáveis que têm o value="cer"
     <br>
     <?php // Se o usuário venceu
     if (isset($msgVenceu)){
+        echo '<div class="texto-resultado">';
+        echo '<div class="resposta"';
         echo $msgVenceu;
+        echo '</div>';
         echo '<br><center><button><a href="capitulo2.php">PRÓXIMO CAPÍTULO</a></button></center>';
+        echo '</div>';
     } else{ // Se o usuário perdeu
+        echo '<div class="texto-resultado">';
+        echo '<div class="resposta"';
         echo $msgPerdeu;
         echo $mapaErr;
         echo $msgPerdeu1;
+        echo '</div>';
         echo '<br><center><button><a href="capitulo1.php">VOLTAR AO INÍCIO</a></button></center>';
+        echo '</div>';
     }
     ?>
     </div>
