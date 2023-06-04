@@ -77,11 +77,12 @@
             <center><button style="color: #8b5742;" type="button" onclick="verificar()">COMEÇAR A VIAGEM!</button></center>
         </div>
     </form>
-    <br>
+    <br><br>
     <hr class="barra-branca">
     <div class="footer">
         <h4>Informações do projeto</h4>
-        <a target="blank" href="https://github.com/gadulb/joguinho">Repositório</a>
+                <a style="font-size: 14px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" target="blank" href="https://github.com/gadulb/joguinho">GitHub</a>
+
     </div>
 
 <script>

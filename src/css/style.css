@@ -30,16 +30,16 @@ body {
     width: 100%;
 }
 
-@media (max-width: 768px) {
-    .h1 {
-        font-size: 10px;
-        font-weight: bold;
-    }
-}
-
 h1 {
     font-size: 50px;
     font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 10px;
+        font-weight: bold;
+    }
 }
 
 h2 {
@@ -219,8 +219,8 @@ img {
     background-color: white;
     margin-left: 25%;
     margin-right: 25%;
-    margin-top: 5%;
-    margin-bottom: 5%;
+    margin-top: 3%;
+    margin-bottom: 3%;
     padding: 1rem;
     border-radius: 0.5rem;
     color: #8b5742;
@@ -229,7 +229,7 @@ img {
 }
 @media (max-width: 768px) {
     .resposta {
-        margin: 5%;
+        margin: 3%;
     }
 }
 .resultado{

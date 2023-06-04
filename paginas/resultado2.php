@@ -16,15 +16,16 @@ $burriceAnel = ($anel1 && $anel2) || ($anel1 && $anel3) || ($anel1 && $anel4) ||
 $burriceAliado = ($aliado1 && $aliado2) || ($aliado1 && $aliado3) || ($aliado1 && $aliado4) || ($aliado2 && $aliado3) || ($aliado2 && $aliado4) || ($aliado3 && $aliado4);
 
 if (($aliado4 == 'op') && ($anel4 == 'op')){ // Variáveis que têm o value="cer"
-    $msgVenceu = 'Parabéns, Cavaleiro!<br><br>
+    $msgVenceu = '
+    <a class="texto-resultado">Parabéns, Cavaleiro!<br>
     <br>O reino de Inforny fora tomado pelos dragões e você, como um dos importantes cavaleiros do reino, enfrentou-os de forma sábia com êxito, mesmo não encontrando tempo suficiente para se preparar, por isso, além de parabenizá-lo pela sua sabedoria de escolhas, o reino o parabeniza pelo bom desempenho durante a guerra.   
-    <br><br><br>Ass. Reino de Inforny.';
+    <br><br>Ass. Reino de Inforny.</a>';
 } else{
-    $msgPerdeu = 'Lamentamos ao Cavaleiro...<br><br> 
-    <br>O reino de Inforny lamenta, através desta carta, à morte do cavaleiro. Por conta de suas más escolhas, não conseguiu resistir à guerra.
-    <br><br>Alguns dos itens encontrados que, possivelmente, o atrapalharam durante a guerra:<br><br>';
+    $msgPerdeu = '
+    <a class="texto-resultado">Lamentamos ao Cavaleiro...<br><br>O reino de Inforny lamenta, através desta carta, à morte do cavaleiro. Por conta de suas más escolhas, não conseguiu resistir à guerra.
+    Alguns dos itens encontrados que, possivelmente, o atrapalharam durante a guerra:<br><br>';
     $msgPerdeu1 = '<br>Nossas condolências à família e amigos... 
-    <br><br><br><br>Ass. Reino de Inforny. ';
+    <br><br>Ass. Reino de Inforny.</a> ';
     if (($aliado1 || $aliado2 || $aliado3 == "op") && ($anel1 || $anel2 || $anel3 == "op")){
         $aliadoErr = ($aliado1 || $aliado2 || $aliado3 == "op"); // Escolhas erradas do tipo específico
         if($aliadoErr){ 
@@ -39,12 +40,12 @@ if (($aliado4 == 'op') && ($anel4 == 'op')){ // Variáveis que têm o value="cer
         }
     } else{
         if($burriceAnel){
-            $burriceAnel = 'Por que você escolheu dois anéis?<br>';
+            $burriceAnel = '(Por que você escolheu dois anéis?)<br>';
         } else{
             $burriceAnel = "";
         }
         if($burriceAliado){
-            $burriceAliado = 'Por que você escolheu dois aliados?<br>';
+            $burriceAliado = '(Por que você escolheu dois aliados?)<br>';
         } else{
             $burriceAliado = '';
         }
@@ -88,18 +89,33 @@ if (($aliado4 == 'op') && ($anel4 == 'op')){ // Variáveis que têm o value="cer
     <br>
     <?php // Se o usuário venceu
     if (isset($msgVenceu)){
+        echo '<div class="texto-resultado">';
+        echo '<div class="resposta"';
         echo $msgVenceu;
+        echo '</div>';
         echo '<br><center><button><a href="capitulo3.php">PRÓXIMO CAPÍTULO</a></button></center>';
+        echo '</div>';
     } else{ // Se o usuário perdeu
+        echo '<div class="texto-resultado">';
+        echo '<div class="resposta"';
         echo $msgPerdeu;
         echo $aliadoErr;
         echo $anelErr;
         echo $burriceAliado;
         echo $burriceAnel;
         echo $msgPerdeu1;
+        echo '</div>';
         echo '<br><center><button><a href="home.php">VOLTAR AO INÍCIO</a></button></center>';
+        echo '</div>';
     }
     ?>
+    <br><br>
+    <hr class="barra-branca">
+    <div class="footer">
+        <h4>Informações do projeto</h4>
+                <a style="font-size: 14px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" target="blank" href="https://github.com/gadulb/joguinho">GitHub</a>
+
+    </div>
 </div>
 </body>
 </html>

@@ -71,5 +71,11 @@ if ($mapa3 == 'op'){ // Variáveis que têm o value="cer"
         echo '</div>';
     }
     ?>
+    <br><br>
+    <hr class="barra-branca">
+    <div class="footer">
+        <h4>Informações do projeto</h4>
+        <a style="font-size: 14px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" target="blank" href="https://github.com/gadulb/joguinho">GitHub</a>
+    </div>
     </div>
 </body>
