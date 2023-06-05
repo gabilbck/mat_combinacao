@@ -30,6 +30,10 @@ body {
     width: 100%;
 }
 
+.fonte-padrao{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
 h1 {
     font-size: 50px;
     font-weight: bold;
@@ -37,7 +41,7 @@ h1 {
 
 @media (max-width: 768px) {
     .header h1 {
-        font-size: 10px;
+        font-size: 37px;
         font-weight: bold;
     }
 }
@@ -59,6 +63,15 @@ h3 {
     font-size: 20px;
     font-weight: bold;
     width: 100%;
+}
+
+.footer a{
+    text-decoration: none;
+}
+
+.footer a:hover{
+    text-shadow: rgb(54, 30, 30) 0.1rem 0.1rem 0.5rem;
+    text-decoration: underline;
 }
 
 .item {
@@ -85,6 +98,20 @@ h3 {
     border: 0 solid white;
     border-radius: 1rem;
 }
+.barra-branca-meio{
+    width: 30%;
+    height: 0.25rem;
+    background-color: white;
+    border: 0 solid white;
+    border-radius: 1rem;
+}
+@media screen and (max-width: 768px) {
+    .barra-branca-meio{
+        margin-top: 5%;
+        margin-right: 5%;
+        width: 70%;
+    }
+}
 
 button {
     background-color: white;
@@ -104,6 +131,7 @@ button {
 button:hover {
     font-weight: bolder;
     font-size: 1.5rem;
+    box-shadow: rgb(54, 30, 30) 0.1rem 0.1rem 1rem;
 }
 
 button:active {
@@ -152,6 +180,10 @@ img {
     border-radius: 0.5rem;
     /* border: #4d3329 solid 0.3rem; */
 }
+.column:hover {
+    box-shadow: rgb(54, 30, 30) 0.1rem 0.1rem 1rem;
+}
+
 .column input {
     color: #8b5742;
     cursor: pointer;
@@ -214,6 +246,38 @@ img {
     }
 }
 
+/* Cartas */
+.carta{
+    display: grid;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    color: #8b5742;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: justify;
+    background-color: white;
+    box-shadow: rgb(54, 30, 30) 0.1rem 0.1rem 1rem;
+}
+.carta i{
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #8b5742;
+    font-weight: bold;
+}
+
+@media (max-width: 1000px) {
+    .carta {
+        margin-top: 3%;
+        margin-left: 3%;
+        margin-right: 3%;
+        margin-bottom: 3%;
+        width: auto;
+    }
+}
+
 /* Resultado */
 .resposta{
     background-color: white;
@@ -225,7 +289,7 @@ img {
     border-radius: 0.5rem;
     color: #8b5742;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    
+    box-shadow: rgb(54, 30, 30) 0.1rem 0.1rem 1rem;
 }
 @media (max-width: 768px) {
     .resposta {
@@ -238,6 +302,10 @@ img {
 
 .texto-resultado{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
+    font-style: italic;
+}
+.resposta:hover{
+    box-shadow: rgb(54, 30, 30) 0.1rem 0.1rem 1rem;
 }
