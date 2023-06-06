@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../src/css/style.css">
+    <link rel="icon" type="image/png" href="../src/img/espadas/espada1.png">
+    <link rel="stylesheet" href="../src/css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap" rel="stylesheet">
@@ -18,10 +19,20 @@
     <hr class="barra-branca">
     <br>
     <form id="combinacoes" action="resultado2.php" method="get">
-        <div class="">
+            <div class="carta">
+                <div style="grid-template-columns: 1fr;">
+                    <i>Caro cavaleiro,
+                    <br><br>Conseguiste progredir, pois as sombras não puderam o impedir. Em seu caminho você segue a trilhar, mas os monstros continuam a te atrapalhar... O que você precisa é de um aliado, que o proteja e o deixe impressionado! Dê a ele o presente perfeito, útil em sua aventura e que lhe faça satisfeito. Escolha um aliado e um presente corretamente, ou sua jornada terminará rapidamente.
+                    <br><br>Ass. Reino de Inforny.</i><br><br>
+                </div>
+            </div>
             <center>
-                <h3>Segunda missão: escolher o aliado certo</h3>
                 <br>
+                <hr class="barra-branca-meio">
+                <br><br>
+                <h3>Primeira missão: escolher o aliado certo</h3>
+                <b>(1 aliado necessário para prosseguir)</b>
+                <br><br><br>
             </center>
             <!-- ITENS -->
             <div class="container col-4">
@@ -48,8 +59,10 @@
             </div>
             <br>
             <center>
-                <h3>Segunda missão: escolher o presente do aliado certo</h3>
                 <br>
+                <h3>Segunda missão: escolher o anel certo</h3>
+                <b>(1 anel necessário para prosseguir)</b>
+                <br><br><br>
             </center>
             <div class="container col-4">
                 <div class="column">
@@ -81,10 +94,8 @@
     <hr class="barra-branca">
     <div class="footer">
         <h4>Informações do projeto</h4>
-                <a style="font-size: 14px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" target="blank" href="https://github.com/gadulb/joguinho">GitHub</a>
-
-    </div>
-
+        <a style="font-size: 14px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" target="blank" href="https://github.com/gadulb/joguinho">GitHub</a>
+    </div>           
 <script>
     let verificar = () => {
         const selectionados = document.querySelectorAll('input[type="checkbox"]:checked').length;

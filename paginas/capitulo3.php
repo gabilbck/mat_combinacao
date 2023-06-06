@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../src/css/style.css">
+    <link rel="icon" type="image/png" href="../src/img/espadas/espada1.png">
+    <link rel="stylesheet" href="../src/css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap" rel="stylesheet">
@@ -20,12 +21,28 @@
     <hr class="barra-branca">
     <br>
     <form id="combinacoes" action="resultado3.php" method="get">
-        <div class="">
+            <div class="carta">
+                <div style="grid-template-columns: 1fr;">
+                    <i>Caro cavaleiro,
+                    <br><br>Longe trilhou, aliados formou, lágrimas chorou, e enfim no terrível castelo chegou. Equipe-se com sua merecida armadura, espada, escudo, poção e dois alimentos, esteja preparado e leve o melhor equipamento que puder imaginar!
+                    <br><br>Ao fim da sua jornada você alcança, e então você  sente a mudança que causará. Oh Cavaleiro, nos salve deste mal terrível! Torne-se imbatível! Indestrutível! Oh incrível Cavaleiro, complete sua missão!
+                    <br><br>Ass. Reino de Inforny.</i><br><br>
+                </div>
+            </div>
             <center>
-                <h3>Segunda missão: escolher a(s) armaduras corretas</h3>
                 <br>
+                <hr class="barra-branca-meio">
+                <br><br>
+                <h3>Missão Final: escolher o(s) itens corretas</h3>
+                <b>(6 itens necessários para prosseguir)</b>
+                <br><br><br>
             </center>
             <!-- ITENS -->
+            <center>
+                <br><br>
+                <h3>Armaduras</h3>
+                <br>
+            </center>
             <div class="container col-5" >
                 <div class="column">
                     <input type="checkbox" name="armadura1" value="op"><a>Armadura padrão</a>
@@ -53,9 +70,9 @@
                     <center><img src="../src/img/armadura/armadura5.png" width="150" alt="Armadura 5"></center>
                 </div>
             </div>
-            <br>
+            <br><br>
             <center>
-                <h3>Segunda missão: escolher as espadas certas</h3>
+                <h3>Espadas</h3>
                 <br>
             </center>
             <div class="container col-5">
@@ -85,9 +102,9 @@
                     <center><img src="../src/img/espadas/espada5.png" width="150" alt="espada 5"></center>
                 </div>
             </div>
-            <br>
+            <br><br>
             <center>
-                <h3>Terceira missão: escolher os escudos certos</h3>
+                <h3>Escudos</h3>
                 <br>
             </center>
             <div class="container col-5">
@@ -117,9 +134,9 @@
                     <center><img src="../src/img/escudos/escudo5.png" width="150" alt="escudo 5"></center>
                 </div>
             </div>
-            <br>
+            <br><br>
             <center>
-                <h3>Quarta missão: escolher as poções certas</h3>
+                <h3>Poções</h3>
                 <br>
             </center>
             <div class="container col-5">
@@ -149,9 +166,9 @@
                     <center><img src="../src/img/pocoes/pocao5.png" width="150" alt="Poção 5"></center>
                 </div>
             </div>
-            <br>
+            <br><br>
             <center>
-                <h3>Quinta missão: escolher as comidas certas</h3>
+                <h3>Comidas</h3>
                 <br>
             </center>
             <div class="container col-5">

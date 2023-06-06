@@ -28,9 +28,14 @@ $comida4 = filter_input(INPUT_GET, 'comida4');
 $comida5 = filter_input(INPUT_GET, 'comida5');
 
 if (($armadura4 == 'op') && ($espada5 == "op") && ($escudo4 == "op") && ($pocao5 == "op") && ($comida2 == "op") && ($comida3 == "op")){ // Variáveis que têm o value="cer"
-    $msgVenceu = '<a class="texto-resultado">Parabéns, Cavaleiro!<br><br>
-    O reino de Inforny fora tomado pelos dragões e você, como um dos importantes cavaleiros do reino, enfrentou-os de forma sábia com êxito, mesmo não encontrando tempo suficiente para se preparar, por isso, além de parabenizá-lo pela sua sabedoria de escolhas, o reino o parabeniza pelo bom desempenho durante a guerra.   
-    <br><br>Ass. Reino de Inforny.</a>';
+    $msgVenceu = '<a class="texto-resultado">
+    Oh céus... O que pode ser isso? Onde foi a tempestade? O medo e o terror? Majestade, majestade! Se foi o mar de horror! O reino de Inforny finalmente ganhou a guerra contra o mal! Tudo está de volta ao normal. Podemos festejar, se alegrar! Exaltamos o Cavaleiro! Aquele qual nos protegeu e nos acolheu, nos defendeu e não pereceu! O Rei Josias e seu reino agradecem sua bravura e coragem! 
+    <br><br>Caro cavaleiro, o Reino de Inforny só tem a agradecê-lo...
+    <br><br>Aproveite o seu prêmio: <br><br>
+    <center>
+    <img src="../src/img/ouro.png" alt="Ouro" title="Ouro para você! :)" width="50%">
+    </center>
+    </a>';
 } else{
     $msgPerdeu = '<a class="texto-resultado">Lamentamos ao Cavaleiro...<br><br> 
     <br>O reino de Inforny lamenta, através desta carta, à morte do cavaleiro. Por conta de suas más escolhas, não conseguiu resistir à guerra.
@@ -81,10 +86,11 @@ if (($armadura4 == 'op') && ($espada5 == "op") && ($escudo4 == "op") && ($pocao5
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../src/img/espadas/espada1.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap" rel="stylesheet">
-    <link href="../src/css/style.css" rel="stylesheet">
+    <link href="../src/css/styles.css" rel="stylesheet">
     <title>Resultado 3</title>
 </head>
 <body>
