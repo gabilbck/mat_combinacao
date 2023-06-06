@@ -20,7 +20,7 @@
     <div class="carta">
         <div style="grid-template-columns: 1fr;">
             <i>Caro cavaleiro,
-            <br><br>Venho a pedido do Rei Josias, do Reino de Inforny, para lhe trazer uma mensagem. Escute-me pois lhe digo: o reino corre grande perigo! Estamos sendo atacados por monstros e criaturas misticas. Dragões e bruxas com suas feitiçarias. Precisamos que saia em uma jornada para derrotar o mal que nos assombra, tome cuidado e saiba andar no caminho da luz e da sombra. Mas tome muito cuidado, cada decisão importa, então preste atenção se não quiser que sua vida acabe antes mesmo de começar. 
+            <br><br>Venho a pedido do Rei Josias, do Reino de Inforny, para lhe trazer uma mensagem. Escute-me pois lhe digo: o reino corre grande perigo! Estamos sendo atacados por monstros e criaturas misticas. Dragões e bruxas com suas feitiçarias. Precisamos que saia em uma jornada para derrotar o mal que nos assombra, tome cuidado e saiba andar no caminho da luz e da sombra. Cada decisão importa, então preste atenção se não quiser que sua vida acabe antes mesmo de começar. 
             <br><br>Boa sorte, cavaleiro!</i><br><br>
         </div>
     </div>
