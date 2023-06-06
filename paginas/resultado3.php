@@ -33,7 +33,8 @@ if (($armadura4 == 'op') && ($espada5 == "op") && ($escudo4 == "op") && ($pocao5
     <br><br>Caro cavaleiro, o Reino de Inforny só tem a agradecê-lo...
     <br><br>Aproveite o seu prêmio: <br><br>
     <center>
-    <img src="../src/img/ouro.png" alt="Ouro" title="Ouro para você! :)" width="50%">
+    <a href="https://www.youtube.com/watch?v=rxSoUkwP65M&ab_channel=MKVebo">
+    <img src="../src/img/ouro.png" alt="Ouro" title="Ouro para você! :)" width="50%"></a>
     </center>
     </a>';
 } else{

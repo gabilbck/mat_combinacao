@@ -18,7 +18,7 @@ $burriceAliado = ($aliado1 && $aliado2) || ($aliado1 && $aliado3) || ($aliado1 &
 if (($aliado4 == 'op') && ($anel4 == 'op')){ // Variáveis que têm o value="cer"
     $msgVenceu = '
     <a class="texto-resultado">Parabéns, Cavaleiro!<br>
-    <br>O reino de Inforny fora tomado pelos dragões e você, como um dos importantes cavaleiros do reino, enfrentou-os de forma sábia com êxito, mesmo não encontrando tempo suficiente para se preparar, por isso, além de parabenizá-lo pela sua sabedoria de escolhas, o reino o parabeniza pelo bom desempenho durante a guerra.   
+    <br>Mais uma vez conseguiste passar por mais esse desafio. Nós do Reino de Inforny torcemos pelo seu sucesso durante o próximo desafio, agora, juntamente de seu novo aliado!
     <br><br>Ass. Reino de Inforny.</a>';
 } else{
     $msgPerdeu = '
